@@ -16,3 +16,9 @@ Run container and get shell with firebase tools:
 Use docker volumes to mount host volume into this container to use files within firebase-cli.
 
 The default workdir location is `/firebase`
+
+## Run with remote mounts
+
+```
+docker run -it --rm -v /some/location/site/files:/firebase /some/location/site/login:/root/.config/configstore firebase-cli
+```
