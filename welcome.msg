@@ -1,7 +1,7 @@
 
 ======= USAGE =======
 Login:
- $ firebase login
+ $ firebase login --no-localhost
 Init Project:
  $ firebase init
 Deploy:
