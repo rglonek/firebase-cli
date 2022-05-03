@@ -6,8 +6,8 @@ ENV DEBIAN_FRONTEND=noninteractive
 # for all stuff
 WORKDIR /firebase
 
-# install cutl and nodesource
-RUN apt update && apt install -y curl
+# install curl, tools and nodesource
+RUN apt update && apt install -y curl vim less
 RUN curl -sL https://deb.nodesource.com/setup_16.x -o /tmp/nodesource_setup.sh
 RUN /bin/bash /tmp/nodesource_setup.sh
 
